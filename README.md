@@ -215,7 +215,7 @@ Separate validation class:Validation logic started inside the controller as a pr
 
 Separate model class: All database queries were moved from the controller into `VehicleModel.php`. The controller calls the model and handles the response, but never writes SQL directly. This makes the code easier to read and easier to change in the future.
 
-`vehicle_type`: is free text, the task did not specify what values are allowed for `vehicle_type` (e.g. car, truck, motorcycle), so it accepts any non-empty string on create. Can be updated in the future with strictier rules.
+`vehicle_type`: is free text, the task did not specify what values are allowed for `vehicle_type`, so it accepts any non-empty string on create. Can be updated in the future with strictier rules.
 
 No authentication: The task did not include authentication requirements, so the API is open. In a production app, API key can be added.
 
