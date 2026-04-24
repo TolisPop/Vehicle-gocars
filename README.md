@@ -196,20 +196,20 @@ On update (PUT), required field checks are skipped, you can send only the fields
 ```
 vehicle-api/
 │
-├── index.php               Entry point — handles routing only
+├── index.php               Entry point handles routing 
 ├── VehicleController.php   Handles validation, logic, and responses
 ├── VehicleModel.php        Handles all database queries
 ├── CarDataValidation.php   Handles all validation rules
 └── database.php            Handles the database connection
 ```
 
-Each file has one clear responsibility, for the controller never writes SQL.
+Each file has one clear responsibility
 
 
 
 ## Assumptions & Design Decisions
 
-Validation on both create and update: Applies to  all value rules (fuel type, transmission, price, doors) on updates as well, only the required field check is skipped. This prevents invalid data from entering the database through the update route. This feature wasn't applied from my first prototype.
+Validation on both create and update: Applies to  all value rules (fuel type, transmission, price, doors) on updates as well. This prevents invalid data from entering the database through the update route. This feature wasn't applied from my first prototype.
 
 Separate validation class:Validation logic started inside the controller as a private method. I moved it into its own class (named `CarDataValidation`) to keep each file focused on one job.
 
