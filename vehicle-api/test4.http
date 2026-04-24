@@ -1,0 +1,12 @@
+POST http://vehicle-api.test/vehicles
+Content-Type: application/json
+
+{
+  "model_name": "Test Car",
+  "type_id": 1,
+  "vehicle_type": "A",
+  "fuel": "petrol",
+  "transmission": "manual",
+  "price": 5000,
+  "doors": 4
+}

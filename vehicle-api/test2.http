@@ -1,0 +1,12 @@
+POST http://vehicle-api.test/index.php
+Content-Type: application/json
+
+{
+  "model_name": "Suzuki Vitara",
+  "type_id": 1,
+  "vehicle_type": "SUV",
+  "doors": 4,
+  "transmission": "manual",
+  "fuel": "petrol",
+  "price": 280000
+}
