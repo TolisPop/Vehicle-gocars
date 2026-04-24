@@ -28,7 +28,7 @@ CREATE TABLE vehicles (
 );
 ```
 
-4. Make sure `database.php` credentials match your local MySQL setup
+4. Make sure `database.php` credentials match your local MySQL setup, I used DBngin.
 5. Access the API at: http://vehicle-api.test/index.php
 
 ---
