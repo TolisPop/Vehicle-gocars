@@ -1,5 +1,0 @@
-###
-GET http://localhost/vehicle-api/index.php
-
-###
-DELETE http://localhost/vehicle-api/index.php?id=8

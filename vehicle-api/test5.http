@@ -1,6 +1,0 @@
-PUT http://vehicle-api.test/vehicles/13
-Content-Type: application/json
-
-{
-  "price": 6000
-}
